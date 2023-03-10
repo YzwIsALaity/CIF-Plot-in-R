@@ -20,7 +20,7 @@ We will be using the monoclonal gammopathy data from the `survival` package, whi
 
 - `Death_Time`: this is a __survival time (year)__ until the `Death` event happened or censored (numerical).
 
-![](/Users/yonwang/Desktop/Cumulative Incidence Plot/Figure/Dataset.jpeg)
+![](https://github.com/YzwIsALaity/CIF-Plot-in-R/blob/e31252ff83cb33fc50af0131c8bc37173d1d8ed0/Dataset.jpeg)
 
 # 2. Cumulative incidence function plot
 ## (1). Cumulative incidence function
@@ -90,14 +90,14 @@ CIF_Plot <- ggcuminc(x = CIF,                        # the above CIF function
 CIF_Plot
 ```
 
-![](/Users/yonwang/Desktop/Cumulative Incidence Plot/Figure/Cumulative Incidence Function.jpeg)
+![](https://github.com/YzwIsALaity/CIF-Plot-in-R/blob/e31252ff83cb33fc50af0131c8bc37173d1d8ed0/Cumulative%20Incidence%20Function.jpeg)
 
 Here we go!
 
 ## (4). Comparison between Kaplan-Meier curve
 In contrast to the cumulative incidence function, the __Kaplan-Meier curve__ estimates the failure rate for each competing event separately. When the event of interest is __progression to PCM__, the __death due to MGUS__ will be considered censored, in addition to the usual censored observations. __On the other hand, the cumulative incidence function uses the overall survival function, which takes into account events from both the competing events and the events of interest__.
 
-![](/Users/yonwang/Desktop/Cumulative Incidence Plot/Figure/Comparison of Curves.jpeg)
+![](https://github.com/YzwIsALaity/CIF-Plot-in-R/blob/e31252ff83cb33fc50af0131c8bc37173d1d8ed0/Comparison%20of%20Curves.jpeg)
 
 It is clear that the Kaplan-Meier curve for progression to PCM treats events that are due to death as censored at later years post-diagnosis, which cannot be accurately represented. However, this situation can be visualized using the cumulative incidence function.
 
